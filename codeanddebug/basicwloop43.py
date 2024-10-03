@@ -1,0 +1,10 @@
+num=int(input("enter last number to print series"))
+i=1
+while i<=num:
+    print(num,end=" ") 
+    num=num-1
+# num=int(input("enter last number to print series"))
+# i=num
+# while i>=1:
+#     print(i,end=" ") 
+#     i=i-1
