@@ -1,29 +1,23 @@
-def isValid(s: str) -> bool:
-   
-    stack = []
-    
-    
-    matching_brackets = {
-        ')': '(',
-        '}': '{',
-        ']': '['
-    }
-    
-    
-    for char in s:
-        
-        if char in '({[':
-            stack.append(char)
-       
-        elif char in ')}]':
-           
-            if not stack or stack.pop() != matching_brackets[char]:
-                return False
-    
+class Solution(object):
+    def isValid(self, s):
+        bracket_map = {")": "(", "}": "{", "]": "["}
+        stack = []
 
-    return len(stack) == 0
+        for char in s:
+            if char in bracket_map:
+                top_element = stack.pop() if stack else "#"
+                if bracket_map[char] != top_element:
+                    return False
+            else:
+                stack.append(char)
+
+        return not stack
 
 
-print(isValid("()"))       
-print(isValid("()[]{}"))   
-print(isValid("(]"))      
+solution = Solution()
+
+print(solution.isValid("()"))
+print(solution.isValid("()[]{}"))
+print(solution.isValid("(]"))
+print(solution.isValid("([)]"))
+print(solution.isValid("{[]}"))
