@@ -1,10 +1,10 @@
-def find_duplicates(string):
-    duplicates = []
+def duplicate_string(string):
+    duplicate = []
     for char in set(string):
         if string.count(char) > 1:
-            duplicates.append(char)
-    return duplicates
+            duplicate.append(char)
+    return duplicate
 
 
-string = "programming"
-print("Duplicate items:", find_duplicates(string))
+string = input("enter string:")
+print("duplicate items:", duplicate_string(string))

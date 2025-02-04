@@ -1,0 +1,3 @@
+hello i am creating 
+a simple text file 
+and learning about file handling in python

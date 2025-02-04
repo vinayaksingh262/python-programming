@@ -1,0 +1,2 @@
+hello this a question of file handling
+in this i am learning about write 

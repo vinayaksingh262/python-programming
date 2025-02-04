@@ -1,4 +1,4 @@
-nterms=int(input("Enter no you want to print series:"))
+"""nterms=int(input("Enter no you want to print series:"))
 n1,n2=0,1
 count=0
 if nterms<=0:
@@ -12,6 +12,15 @@ else:
         nth=n1+n2
         n1=n2
         n2=nth
-        count+=1
-    
+        count+=1"""
 
+
+def is_fibonnaci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+
+
+terms = int(input(""))
+is_fibonnaci(terms)
