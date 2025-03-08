@@ -16,3 +16,4 @@ def print_fibo(n):
 
 n = int(input("enter a number you want to print a fibonnaci series :"))
 print_fibo(n)
+# this is the recursive method of this code and in this time complexity is O(2^n) so this is not optimized version
