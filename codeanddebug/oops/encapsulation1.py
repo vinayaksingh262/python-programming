@@ -1,5 +1,7 @@
 from random import randint
 
+# public
+
 
 class Bank:
     def __init__(self):

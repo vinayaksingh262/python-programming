@@ -26,7 +26,7 @@ class Bank:
 obj = Bank()
 obj.display()
 obj.setbalance(1000)
-obj._Bank__balance = 1
+obj._Bank__balance = 1  # accessing the private members using name mangling
 obj.display()
 print("---------")
 obj.displaybalance()

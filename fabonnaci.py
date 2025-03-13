@@ -18,9 +18,11 @@ else:
 def is_fibonnaci(n):
     a, b = 0, 1
     for _ in range(n):
-        print(a, end=" ")  # time complexity - O(n) and space complexity - O(1)
+        print(a, end=" ")
         a, b = b, a + b
 
 
 terms = int(input(""))
 is_fibonnaci(terms)
+# time complexity - O(n)
+# space complexity - O(1)
