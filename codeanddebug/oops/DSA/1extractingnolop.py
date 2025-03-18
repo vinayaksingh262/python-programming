@@ -1,3 +1,4 @@
+# extract and print each digit of given integer number starting from the last digit
 def extractDigit(num: int) -> None:
 
     n = num
