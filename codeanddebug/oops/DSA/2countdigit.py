@@ -1,8 +1,10 @@
 # count the number of digit in an integer
-num = 5873
+n = 5873
+num = n
 count = 0
 while num > 0:
-    num = num % 10
-    count += num
 
-print(num)
+    count += 1
+    num = num // 10
+
+print(count)
