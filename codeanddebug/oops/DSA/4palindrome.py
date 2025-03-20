@@ -26,4 +26,4 @@ def is_palindrome(x: int) -> bool:
     return palindrome_no == x
 
 
-print(is_palindrome(121))
+print(is_palindrome(520))
