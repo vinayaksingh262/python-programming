@@ -1,10 +1,13 @@
 # count the number of digit in an integer
-n = 5873
-num = n
-count = 0
-while num > 0:
+def countDigit(n: int):
 
-    count += 1
-    num = num // 10
+    count = 0
+    while n > 0:
 
-print(count)
+        count += 1
+        n = n // 10
+    print(count)
+
+
+n = int(input("Enter a integer you want to count digit: "))
+countDigit(n)

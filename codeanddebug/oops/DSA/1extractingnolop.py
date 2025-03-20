@@ -8,4 +8,5 @@ def extractDigit(num: int) -> None:
         n = n // 10
 
 
-extractDigit(5473)
+num = int(input("enter a number you want to print reverse:"))
+extractDigit(num)
