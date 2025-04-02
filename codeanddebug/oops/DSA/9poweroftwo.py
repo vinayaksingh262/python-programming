@@ -4,5 +4,5 @@ def powerOfTwo(n: int) -> bool:
     return (n & (n - 1)) == 0
 
 
-print(powerOfTwo(8))
-print(powerOfTwo(10))
+print(powerOfTwo(24))
+print(powerOfTwo(16))
