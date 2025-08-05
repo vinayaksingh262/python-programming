@@ -4,12 +4,8 @@
 # Example 1:             # Example 2:           # Example 3:
 # Input: x = 123         # Input: x = -123      # Input: x = 120
 # Output: 321            # Output: -321         # Output: 21
-
 # Constraints:
-
 # -231 <= x <= 231 - 1
-
-
 def reverse(x: int) -> int:
     is_negative = False
     if x < 0:

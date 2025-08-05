@@ -11,4 +11,4 @@ def is_prime(n) -> bool:
     return True
 
 
-print(is_prime(29))
+print(is_prime(36))
