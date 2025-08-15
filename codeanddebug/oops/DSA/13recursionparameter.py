@@ -1,4 +1,4 @@
-def fun(x, N):
+'''def fun(x, N):
     if N == 0:
         return
     print(x)
@@ -12,10 +12,21 @@ print 1 to N using recursion"""
 
 
 def fun(x, N):
-    if x == N + 1:
+    if x > N :
         return
     print(x)
     fun(x + 1, N)
 
 
-fun(1, 10)
+fun(1, 10)'''
+
+
+# another method
+def fun(N):
+    if N == 0:
+        return
+    print(N)
+    fun(N - 1)
+
+
+fun(10)
